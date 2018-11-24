@@ -159,7 +159,7 @@ export class Page extends React.Component<{}, State> {
                                         onSubmit={() => {
                                             console.log("Submit");
                                         }}>
-                                        Send message
+                                        Hack You Pay Me
                                     </button>
                                 </div>
                             </div>

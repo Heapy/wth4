@@ -26,7 +26,7 @@ export function Hero() {
             <div className="hero-body">
                 <div className="container">
                     <div className="columns">
-                        <div className="column is-4 is-offset-4">
+                        <div className="fackform column is-4 is-offset-4">
                             <Page/>
                         </div>
                     </div>
