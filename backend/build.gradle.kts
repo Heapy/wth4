@@ -9,6 +9,11 @@ repositories {
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    // https://mvnrepository.com/artifact/org.kohsuke/github-api
+    implementation("org.kohsuke:github-api:1.95")
+    compile("io.ktor:ktor-server-netty:1.0.0")
+    compile("io.ktor:ktor-jackson:1.0.0")
+
     testImplementation("org.jetbrains.kotlin:kotlin-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
 }
