@@ -9,6 +9,7 @@ repositories {
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation("ch.qos.logback:logback-classic:1.2.3")
     // https://mvnrepository.com/artifact/org.kohsuke/github-api
     implementation("org.kohsuke:github-api:1.95")
     compile("io.ktor:ktor-server-netty:1.0.0")
