@@ -65,7 +65,7 @@ export class Page extends React.Component<{}, State> {
             <section>
                 <div className="content">
                     <h1 className="header is-1 has-text-centered">
-                        Fack you pay me
+                        Сколько ты зарабатываешь?
                     </h1>
                 </div>
 

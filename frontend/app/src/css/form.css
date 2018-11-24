@@ -1,0 +1,8 @@
+body {
+    background: url("./../img/1.jpg");
+    background-size: cover;
+}
+
+.header.is-1.has-text-centered {
+    color: white;
+}
