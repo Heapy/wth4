@@ -1,0 +1,15 @@
+version: "3.3"
+services:
+  proxy:
+    image: nginx:1.15.3
+    container_name: wth4_proxy
+    restart: always
+    volumes:
+     - ./nginx/conf:/etc/nginx/conf.d/:ro
+     - ../frontend/dist:/usr/share/nginx/html/frontend/:ro
+    network_mode: "host"
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+        mode: host
