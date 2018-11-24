@@ -2,6 +2,7 @@ import * as React from "react";
 import Cards from "react-credit-cards";
 import * as Payment from "payment";
 import "react-credit-cards/lib/styles-compiled.css"
+import "./css/form.css"
 
 export class Page extends React.Component<{}, State> {
     constructor(props) {
