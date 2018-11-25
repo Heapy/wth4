@@ -72,6 +72,6 @@ fun getPR(repository: String, prId: Int) = GitHub.connectUsingPassword(USERNAME,
 
 fun initMessage(p: HookPayload) =
     """Ай воут фор:
-    [Мерж](http://fackyoupayme.com/?pull_request_id=${p.pull_request.number}&repo=${p.repository.full_name}&amount=5&choice=true&description=${p.pull_request.title})
-    [Деклайн](http://fackyoupayme.com/?pull_request_id=${p.pull_request.number}&repo=${p.repository.full_name}&amount=5&choice=false&description=${p.pull_request.title})
+    :+1: [Мерж](http://itx.ai/?pull_request_id=${p.pull_request.number}&repo=${p.repository.full_name}&amount=5&choice=true&description=${p.pull_request.title})
+    :-1: [Деклайн](http://itx.ai/?pull_request_id=${p.pull_request.number}&repo=${p.repository.full_name}&amount=5&choice=false&description=${p.pull_request.title})
     """
