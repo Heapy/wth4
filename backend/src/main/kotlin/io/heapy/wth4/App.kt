@@ -5,6 +5,7 @@ import io.heapy.wth4.model.PayPayload
 import io.ktor.application.call
 import io.ktor.application.install
 import io.ktor.features.CORS
+import io.ktor.features.CallLogging
 import io.ktor.features.ContentNegotiation
 import io.ktor.jackson.jackson
 import io.ktor.request.receive
@@ -29,6 +30,7 @@ fun main(args: Array<String>) {
         install(CORS) {
             anyHost()
         }
+        install(CallLogging)
         routing {
             post("/pr") {
                 val pr = call.receive<HookPayload>()
